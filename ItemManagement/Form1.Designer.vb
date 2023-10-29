@@ -172,13 +172,14 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(862, 451)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "Form1"
+        StartPosition = FormStartPosition.Manual
         Text = "Form1"
         Panel1.ResumeLayout(False)
         Panel2.ResumeLayout(False)

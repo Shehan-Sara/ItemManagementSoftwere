@@ -179,6 +179,7 @@ Partial Class Form2
         Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.None
         Name = "Form2"
+        StartPosition = FormStartPosition.Manual
         Text = "Form2"
         Panel2.ResumeLayout(False)
         Panel1.ResumeLayout(False)
