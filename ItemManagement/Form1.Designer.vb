@@ -32,6 +32,7 @@ Partial Class Form1
         Panel2 = New Panel()
         Button7 = New Button()
         Button6 = New Button()
+        Button8 = New Button()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         SuspendLayout()
@@ -136,6 +137,7 @@ Partial Class Form1
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(34), CByte(40), CByte(49))
+        Panel2.Controls.Add(Button8)
         Panel2.Controls.Add(Button7)
         Panel2.Controls.Add(Button6)
         Panel2.Location = New Point(207, 0)
@@ -170,6 +172,17 @@ Partial Class Form1
         Button6.TabIndex = 0
         Button6.UseVisualStyleBackColor = True
         ' 
+        ' Button8
+        ' 
+        Button8.FlatAppearance.BorderSize = 0
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Image = My.Resources.Resources.minimize
+        Button8.Location = New Point(596, 8)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(22, 22)
+        Button8.TabIndex = 3
+        Button8.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -196,4 +209,5 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
 End Class

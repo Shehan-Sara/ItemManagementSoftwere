@@ -46,4 +46,12 @@
         ' Trigger the FormClosing event to open the second form
         Me.Close()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
