@@ -32,6 +32,7 @@ Partial Class Form2
         Panel4 = New Panel()
         Button2 = New Button()
         Button1 = New Button()
+        Button8 = New Button()
         Panel2.SuspendLayout()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -39,9 +40,10 @@ Partial Class Form2
         ' Panel2
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(34), CByte(40), CByte(49))
+        Panel2.Controls.Add(Button8)
         Panel2.Controls.Add(Button7)
         Panel2.Controls.Add(Button6)
-        Panel2.Location = New Point(189, -1)
+        Panel2.Location = New Point(207, -1)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(656, 59)
         Panel2.TabIndex = 2
@@ -67,7 +69,7 @@ Partial Class Form2
         Button6.FlatAppearance.BorderSize = 0
         Button6.FlatStyle = FlatStyle.Flat
         Button6.Image = My.Resources.Resources.close
-        Button6.Location = New Point(624, 8)
+        Button6.Location = New Point(624, 7)
         Button6.Name = "Button6"
         Button6.Size = New Size(22, 22)
         Button6.TabIndex = 0
@@ -170,15 +172,27 @@ Partial Class Form2
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Button8
+        ' 
+        Button8.FlatAppearance.BorderSize = 0
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Image = My.Resources.Resources.minimize
+        Button8.Location = New Point(596, 7)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(22, 22)
+        Button8.TabIndex = 4
+        Button8.UseVisualStyleBackColor = True
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(844, 404)
+        ClientSize = New Size(862, 451)
         Controls.Add(Panel1)
         Controls.Add(Panel2)
         FormBorderStyle = FormBorderStyle.None
         Name = "Form2"
+        StartPosition = FormStartPosition.Manual
         Text = "Form2"
         Panel2.ResumeLayout(False)
         Panel1.ResumeLayout(False)
@@ -195,4 +209,5 @@ Partial Class Form2
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button8 As Button
 End Class
